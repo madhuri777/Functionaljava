@@ -7,15 +7,13 @@ public class ReplaceStringTemplate {
 
 	public static void main(String[] args) {
 		Utility un=new Utility();
-		String username1=un.stringReplce();
-		int l=username1.length();
-		if(l>3) {
-			
-			 System.out.println("Hello "+username1+" ,How are you?");
-		}else {
+		System.out.println("Enter the user name");
+		String username=un.inputString();
+		if(username.length()<3) {
 			System.out.println("userName containe at least 3 character");
+		}else {
+		System.out.println(Utility.stringReplce(username));
 		}
-	 
 	
 	}
 

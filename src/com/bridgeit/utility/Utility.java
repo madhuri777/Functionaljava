@@ -72,8 +72,8 @@ public class Utility {
 	 * @return
 	 */
 	public static String stringReplce(String username) {
-		String s1 = "Hello username,how are you?";
-		String string1 = s1.replace("username", username);
+		String s1 = "Hello <<UserName>>,how are you?";
+		String string1 = s1.replace("<<UserName>>", username);
 		return string1;
 	}
 

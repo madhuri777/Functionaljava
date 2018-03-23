@@ -17,8 +17,9 @@ public class StopWatch {
 		int N=un.inputInteger();
 		for(int i=0;i<N;i++) {
 		 sum=sum+i;	
+		 System.out.println(sum);
 		}
-		System.out.println(sum);
+		//System.out.println(sum);
 		System.out.println(Utility.elapseTime( start1));
 	}
 

@@ -113,6 +113,7 @@ public class Utility {
 		}
 		if (digit == 4) {
 			if (year % 400 == 0) {
+				int n=year%400;
 				flag = true;
 			} else if (year % 100 == 0) {
 				flag = false;
@@ -304,6 +305,7 @@ public class Utility {
 			k = j + 1;
 			sum = arr[i] + arr[j] + arr[k];
 			if (sum == 0) {
+				System.out.println("triplets are:"+arr[i]+" "+arr[j]+" "+arr[k]);
 				count++;
 			}
 		}
@@ -388,14 +390,13 @@ public class Utility {
 	public static int couponNumberProgram(int N) {
 		boolean[] isCollected = new boolean[N];
 		int count = 0;
-		// int i=0;
 		int distinct = 0;
 		while (distinct < N) {
 			count++;
 			int no = (int) (Math.random() * N);
 			if (!isCollected[no]) {
 				distinct++;
-				System.out.print(no);
+				System.out.print(no+" ");
 				isCollected[no] = true;
 			}
 		}

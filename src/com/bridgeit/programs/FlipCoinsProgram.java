@@ -8,8 +8,11 @@ public class FlipCoinsProgram {
 		Utility un=new Utility();
 		System.out.println("Enter number of times to flip coin");	    
 	    int c=un.inputInteger();
+	    if(c>0) {
 	  Utility.flipCoin(c);
-	   
+	    }else {
+	    	System.out.println("please enter the +ve integer");
+	    }
 	    
      }
 	}
